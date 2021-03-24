@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: gitops-prod
+namespace: gitops-integ
 
 
 bases:
@@ -20,4 +20,4 @@ generatorOptions:
 
 images:
   - name: quay.io/pittar/petclinic
-    newTag: gitops-prod
+    newTag: gitops-dev
